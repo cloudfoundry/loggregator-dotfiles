@@ -301,14 +301,14 @@ fi
 precmd(){
 
     local exit_status=$?
-    
+
     local config_locality="--local"
     if [[ -z $(git config --local duet.env.git-author-email) ]]; then
         config_locality="--global"
     fi
     local duet_pair="$(git config ${config_locality} duet.env.git-author-initials)+$(git config ${config_locality} duet.env.git-committer-initials)"
     if [[ -z $(git config ${config_locality} duet.env.git-committer-email) ]]; then
-        duet_pair="(solo) $(git config ${config_locality} duet.env.git-author-email)" 
+        duet_pair="(solo) $(git config ${config_locality} duet.env.git-author-email)"
     fi
 
     vcs_info 'prompt'
