@@ -15,6 +15,7 @@ Plugin 'ctrlpvim/ctrlp.vim'         " Quick file navigation
 Plugin 'tpope/vim-commentary'       " Quickly comment lines out and in
 Plugin 'tpope/vim-fugitive'         " Help formatting commit messages
 Plugin 'fatih/vim-go'               " Helpful plugin for Golang dev
+Plugin 'airblade/vim-gitgutter'     " Show git gutter to track diff
 call vundle#end()                   " Complete vunde initialization
 
 " detect file type, turn on that type's plugins and indent preferences
