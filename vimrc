@@ -102,7 +102,7 @@ set t_Co=256            " set 256 color
 set colorcolumn=80      " highlight col 80
 highlight ColorColumn ctermbg=235
 
-set listchars=tab:▸\ ,eol:¬,trail:· " show whitespace characters
+set listchars=tab:▸\ ,trail:· " show whitespace characters
 set list                " enable display of invisible characters
 
 " invisible character colors
