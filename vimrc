@@ -125,7 +125,6 @@ set splitright                  " split panes to the right
 set history=10000               " keep a longer history
 
 set wildmenu                    " allow for menu suggestions
-set wildmode=list:longest       " better tab completion
 
 set autowrite                   " automatically write file on `:make`
 
