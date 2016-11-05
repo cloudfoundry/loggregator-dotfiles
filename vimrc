@@ -96,6 +96,7 @@ colorscheme lucius      " color scheme
 set background=dark     " assume a dark background
 set cursorline          " highlight current line
 set highlight=sbr       " invert and bold status line
+let loaded_matchparen = 1
 
 set t_Co=256            " set 256 color
 set colorcolumn=80      " highlight col 80
