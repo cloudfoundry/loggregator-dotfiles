@@ -9,10 +9,6 @@ shopt -s histappend
 HISTSIZE=10000
 HISTFILESIZE=20000
 
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
-#shopt -s globstar
-
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
@@ -21,7 +17,6 @@ YELLOW='\[\e[1;33m\]'
 GREEN='\[\033[01;32m\]'
 BLUE='\[\033[01;34m\]'
 PURPLE='\[\033[35m\]'
-RED='\[\e[1;31m\]'
 WHITE='\[\033[00m\]'
 GIT_PS1_SHOWDIRTYSTATE=true
 function color_my_prompt {
@@ -38,7 +33,6 @@ color_my_prompt
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-
     alias grep='grep --color=auto'
 fi
 
