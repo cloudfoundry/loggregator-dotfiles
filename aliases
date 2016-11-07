@@ -1,0 +1,7 @@
+alias ll="ls -la"
+alias g="git"
+alias gs="git status"
+alias gl="git log"
+alias ga="git add"
+alias gc="git duet-commit -v"
+
