@@ -4,4 +4,5 @@ alias gs="git status"
 alias gl="git log"
 alias ga="git add"
 alias gc="git duet-commit -v"
-
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
