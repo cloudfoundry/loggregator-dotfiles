@@ -14,6 +14,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# source profile if present
+if [ -f ~/.profile ]; then
+    source ~/.profile
+fi
+
 # source aliases if present
 if [ -f ~/.aliases ]; then
     . ~/.aliases
