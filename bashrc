@@ -1,4 +1,15 @@
 ##############################################################################
+# INIT
+##############################################################################
+# if not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# platform specific script comes first!
+platform_script=~/.bash_`uname | awk '{ print tolower($0) }'`
+[ -f $platform_script ] && . $platform_script
+unset platform_script
+
+##############################################################################
 # GENERAL
 ##############################################################################
 export EDITOR=vim
@@ -8,26 +19,35 @@ export EDITOR=vim
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
+    source /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
+    source /etc/bash_completion
   fi
 fi
 
-# source profile if present
-if [ -f ~/.profile ]; then
-    source ~/.profile
+# source bash_completion.d
+echo /usr/local/etc/bash_completion.d/*.sh | while read line; do
+    source $line
+done
+
+# source profile that is shared between shells
+if [ -f ~/.common_profile ]; then
+    source ~/.common_profile
 fi
 
 # source aliases if present
 if [ -f ~/.aliases ]; then
-    . ~/.aliases
+    source ~/.aliases
+fi
+
+# enable direnv
+if [ which -a direnv ]; then
+    eval "$(direnv hook bash)"
 fi
 
 ##############################################################################
 # HISTORY
 ##############################################################################
-
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 
@@ -41,7 +61,6 @@ HISTFILESIZE=20000
 ##############################################################################
 # PROMPT
 ##############################################################################
-
 NO_COLOR='\[\e[0m\]'
 YELLOW='\[\e[1;33m\]'
 GREEN='\[\033[01;32m\]'
@@ -61,6 +80,5 @@ color_my_prompt
 ##############################################################################
 # CUSTOM ADDITIONS
 ##############################################################################
-eval "$(direnv hook bash)"
-
-/usr/bin/setxkbmap -option "ctrl:nocaps"
+# local stuff
+[ -f ~/.bash_local ] && . ~/.bash_local
