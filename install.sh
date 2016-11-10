@@ -24,12 +24,15 @@ function link_all_dotfiles {
     done
 }
 
-function initialize_vim_config {
-    # pull in vundle (vim package manager)
-    git submodule update --init
+function update_submodules {
+    git submodule update --init --recursive
+}
+
+function initialize_vim_plugins {
     # install vim plugins with vundle
     vim +PluginInstall +qall
 }
 
-initialize_vim_config
+update_submodules
 link_all_dotfiles
+initialize_vim_plugins
