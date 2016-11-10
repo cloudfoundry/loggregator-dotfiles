@@ -26,9 +26,11 @@ if ! shopt -oq posix; then
 fi
 
 # source bash_completion.d
-echo /usr/local/etc/bash_completion.d/*.sh | while read line; do
-    source $line
-done
+if [ -d /usr/local/etc/bash_completion.d ]; then
+    for line in $(echo /usr/local/etc/bash_completion.d/*.sh); do
+        source $line
+    done
+fi
 
 # source profile that is shared between shells
 if [ -f ~/.common_profile ]; then
