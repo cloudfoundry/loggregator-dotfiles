@@ -33,6 +33,12 @@ function initialize_vim_plugins {
     vim +PluginInstall +qall
 }
 
+function initialize_emacs {
+    export PRELUDE_URL="https://github.com/enocom/prelude" && \
+	    curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+}
+
 update_submodules
 link_all_dotfiles
 initialize_vim_plugins
+initialize_emacs
