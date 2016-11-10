@@ -3,6 +3,7 @@
 "------------------------------------------------------------------------------
 set encoding=utf-8            " Ensure encoding is UTF-8
 set nocompatible              " Disable Vi compatability
+set mouse=a                   " Enable mouse in all modes
 
 "-----------------------------------------------------------------------------
 " VUNDLE PLUGIN MANAGEMENT
@@ -14,8 +15,10 @@ Plugin 'VundleVim/Vundle.vim'       " Let Vundle manage Vundle
 Plugin 'ctrlpvim/ctrlp.vim'         " Quick file navigation
 Plugin 'tpope/vim-commentary'       " Quickly comment lines out and in
 Plugin 'tpope/vim-fugitive'         " Help formatting commit messages
+Plugin 'tpope/vim-dispatch'         " Allow background builds
 Plugin 'fatih/vim-go'               " Helpful plugin for Golang dev
 Plugin 'airblade/vim-gitgutter'     " Show git gutter to track diff
+Plugin 'vim-scripts/bufkill.vim'    " Kill buffers and leave windows intact
 call vundle#end()                   " Complete vunde initialization
 
 " detect file type, turn on that type's plugins and indent preferences
@@ -77,7 +80,6 @@ set ruler               " show lines in lower right
 set nowrap              " don't wrap lines eva!
 
 colorscheme lucius      " color scheme
-set background=dark     " assume a dark background
 set cursorline          " highlight current line
 set highlight=sbr       " invert and bold status line
 let loaded_matchparen = 1
@@ -85,8 +87,7 @@ let loaded_matchparen = 1
 set t_Co=256            " set 256 color
 set colorcolumn=80      " highlight col 80
 highlight ColorColumn ctermbg=235
-
-set listchars=tab:▸\ ,trail:· " show whitespace characters
+set listchars=tab:▸\ ,eol:¬,trail:· " show whitespace characters
 set list                " enable display of invisible characters
 
 " invisible character colors
@@ -94,7 +95,7 @@ highlight NonText ctermfg=239
 highlight SpecialKey ctermfg=239
 
 "------------------------------------------------------------------------------
-" Behavior
+" BEHAVIOR
 "------------------------------------------------------------------------------
 set backspace=indent,eol,start  " enable better backspacing
 set noswapfile                  " disable swap files
