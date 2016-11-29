@@ -137,9 +137,6 @@ nmap <silent> <leader>ev :edit $MYVIMRC<cr>
 " load vimrc into memory
 nmap <silent> <leader>ee :source $MYVIMRC<cr>
 
-" clear the search buffer when hitting return
-nnoremap <cr> :nohlsearch<cr>
-
 " reselect when indenting
 vnoremap < <gv
 vnoremap > >gv
