@@ -17,7 +17,6 @@ Plugin 'tpope/vim-commentary'       " Quickly comment lines out and in
 Plugin 'tpope/vim-fugitive'         " Help formatting commit messages
 Plugin 'tpope/vim-dispatch'         " Allow background builds
 Plugin 'fatih/vim-go'               " Helpful plugin for Golang dev
-Plugin 'airblade/vim-gitgutter'     " Show git gutter to track diff
 Plugin 'vim-scripts/bufkill.vim'    " Kill buffers and leave windows intact
 call vundle#end()                   " Complete vunde initialization
 
