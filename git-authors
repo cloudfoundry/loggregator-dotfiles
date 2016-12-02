@@ -1,0 +1,14 @@
+# This file is managed by sprout
+
+authors:
+  ap: Andrew Poydence; apoydence
+  jk: Jason Keene; jkeene
+  jt: JT Archie; jarchie
+  sn: Sam Nelson; nelsam
+  wf: Warren Fernandes; wfernandes
+  ec: Eno Compton; ecompton
+email:
+  domain: pivotal.io
+
+global: true
+

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-all_dotfiles="bashrc bash_darwin bash_profile zshrc common_profile tmux.conf vimrc vim aliases"
+all_dotfiles="bashrc bash_darwin bash_profile zshrc common_profile tmux.conf vimrc vim aliases git-authors"
 
 function link {
     echo Attempting to link $1
