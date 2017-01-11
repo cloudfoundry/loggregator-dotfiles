@@ -128,6 +128,9 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
+" smaller indents for yaml
+autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 expandtab
+
 "------------------------------------------------------------------------------
 " LEADER MAPPINGS
 "------------------------------------------------------------------------------
