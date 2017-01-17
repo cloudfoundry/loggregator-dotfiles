@@ -17,3 +17,4 @@
   squash="commit --squash"
   unstage="reset HEAD"
   rum="rebase master@{u}"
+  sur="submodule update --init --recursive"
