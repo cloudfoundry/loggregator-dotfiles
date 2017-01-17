@@ -1,3 +1,4 @@
+alias ls="ls --color=auto"
 alias ll="ls -la"
 alias g="git"
 alias gs="git status"
