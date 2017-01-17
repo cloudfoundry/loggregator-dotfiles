@@ -1,13 +1,10 @@
 [push]
 	default = simple
-[user]
-	email = you@example.com
-	name = Your Name
 [alias]
   st=status
   di=diff
   co=checkout
-  ci=commit
+  ci=duet-commit
   br=branch
   sta=stash
   llog="log --date=local"
