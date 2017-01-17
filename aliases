@@ -6,3 +6,4 @@ alias gl="git log"
 alias ga="git add"
 alias gc="git duet-commit -v"
 alias grep='grep --color=auto'
+alias loggr='cd ~/workspace/loggregator'
