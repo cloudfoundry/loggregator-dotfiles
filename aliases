@@ -1,4 +1,10 @@
-alias ls="ls --color=auto"
+#!/bin/bash
+if [ $(uname -s) == 'Darwin' ]; then
+  alias ls="ls -G"
+else
+  alias ls="ls --color=auto"
+fi
+
 alias ll="ls -la"
 alias grep='grep --color=auto'
 alias loggr='cd ~/workspace/loggregator'
