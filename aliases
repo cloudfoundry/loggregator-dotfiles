@@ -8,3 +8,5 @@ fi
 alias ll="ls -la"
 alias grep='grep --color=auto'
 alias loggr='cd ~/workspace/loggregator'
+alias depl='cd ~/workspace/deployments-loggregator'
+alias ci='cd ~/workspace/loggregator-ci'
