@@ -13,6 +13,7 @@ unset platform_script
 # GENERAL
 ##############################################################################
 export EDITOR=vim
+export TERM=screen-256color
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
