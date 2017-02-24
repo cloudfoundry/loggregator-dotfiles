@@ -109,3 +109,7 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+# Arrow search history
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
