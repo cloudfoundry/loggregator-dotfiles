@@ -71,6 +71,8 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|svn|vagrant)|node_modules)$',
   \ 'file': '\v\.(swp|zip|exe|so|dll|a)$',
   \ }
+" stop setting git repo as root path
+let g:ctrlp_working_path_mode = ''
 
 "-----------------------------------------------------------------------------
 " nerd tree config
