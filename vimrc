@@ -154,6 +154,9 @@ nnoremap <space> :nohlsearch<cr>
 vnoremap < <gv
 vnoremap > >gv
 
+" clipboard fusion!
+set clipboard^=unnamed clipboard^=unnamedplus
+
 " remove the need to hit c-w for navigating splits
 nmap <c-j> <c-w>j
 nmap <c-k> <c-w>k
