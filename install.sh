@@ -34,10 +34,10 @@ function initialize_vim_plugins {
 }
 
 function merge_x_resources {
-    xrdb merge ~/.Xresoruces
+    xrdb merge ~/.Xresources
 }
 
 update_submodules
 link_all_dotfiles
 initialize_vim_plugins
-merge_x_resoruces
+merge_x_resources
