@@ -4,12 +4,14 @@ authors:
   ap: Andrew Poydence; apoydence
   jk: Jason Keene; jkeene
   jt: JT Archie; jarchie
-  sn: Sam Nelson; nelsam
   wf: Warren Fernandes; wfernandes
   ec: Eno Compton; ecompton
   bl: Brady Love; blove
 email:
   domain: pivotal.io
+email_addresses:
+  jt: jtarchie@gmail.com
+  wf: warren.f.fernandes@gmail.com
 
 global: true
 
