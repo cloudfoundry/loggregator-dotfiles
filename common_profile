@@ -6,3 +6,7 @@ export PATH=~/bin:~/.bin:~/go/bin:/usr/local/go/bin:"$PATH"
 
 export GEM_HOME=$HOME/.gem
 export GEM_PATH=$HOME/.gem
+
+export GOPATH=$HOME/workspace/go
+export PATH=$GOPATH/bin:$PATH
+
