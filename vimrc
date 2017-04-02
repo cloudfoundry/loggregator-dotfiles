@@ -157,6 +157,10 @@ vnoremap > >gv
 " clipboard fusion!
 set clipboard^=unnamed clipboard^=unnamedplus
 
+" turn folding on and open by default
+set foldmethod=syntax
+set foldlevel=99
+
 " remove the need to hit c-w for navigating splits
 nmap <c-j> <c-w>j
 nmap <c-k> <c-w>k
