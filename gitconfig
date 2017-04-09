@@ -19,14 +19,3 @@
   unstage="reset HEAD"
   rum="rebase master@{u}"
   sur="submodule update --init --recursive"
-[user]
-	name = JT Archie
-	email = jarchie@pivotal.io
-[duet "env"]
-	git-author-initials = jt
-	git-author-name = JT Archie
-	git-author-email = jarchie@pivotal.io
-	mtime = 1485796794
-	git-committer-initials = bl
-	git-committer-name = Brady Love
-	git-committer-email = blove@pivotal.io
