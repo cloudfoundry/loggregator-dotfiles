@@ -11,5 +11,5 @@ alias loggr='cd ~/workspace/loggregator'
 alias depl='cd ~/workspace/deployments-loggregator'
 alias ci='cd ~/workspace/loggregator-ci'
 
-alias ss="cd ~/workspace/scalable-syslog-release/src/github.com/cloudfoundry-incubator/scalable-syslog"
+alias ss="cd ~/workspace/scalable-syslog-release/src/code.cloudfoundry.org/scalable-syslog"
 alias ssr="cd ~/workspace/scalable-syslog-release/"
