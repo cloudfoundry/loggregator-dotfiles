@@ -76,7 +76,7 @@ function color_my_prompt {
     local __cur_location="\W"
     local __git_info='$(__git_ps1 "(%s)")'
     local __prompt_tail="$"
-    export PS1="$GREEN$__user_and_host $BLUE$__cur_location $YELLOW$__git_info$PURPLE$__prompt_tail$WHITE "
+    export PS1="$GREEN$__user_and_host $BLUE$__cur_location $YELLOW$__git_info$PURPLE$__prompt_tail$NO_COLOR "
 }
 color_my_prompt
 
