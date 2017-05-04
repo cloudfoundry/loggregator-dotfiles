@@ -73,7 +73,7 @@ WHITE='\[\033[0;37m\]'
 GIT_PS1_SHOWDIRTYSTATE=true
 function color_my_prompt {
     local __user_and_host="\u@\h"
-    local __cur_location="\w"
+    local __cur_location="\W"
     local __git_info='$(__git_ps1 "(%s)")'
     local __prompt_tail="$"
     export PS1="$GREEN$__user_and_host $BLUE$__cur_location $YELLOW$__git_info$PURPLE$__prompt_tail$WHITE "
