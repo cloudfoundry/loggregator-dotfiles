@@ -19,7 +19,6 @@ Plugin 'tpope/vim-fugitive'         " Help formatting commit messages
 Plugin 'tpope/vim-dispatch'         " Allow background builds
 Plugin 'fatih/vim-go'               " Helpful plugin for Golang dev
 Plugin 'vim-scripts/bufkill.vim'    " Kill buffers and leave windows intact
-Plugin 'scrooloose/nerdtree'        " visual file hierarchy navigation
 call vundle#end()                   " Complete vunde initialization
 
 " detect file type, turn on that type's plugins and indent preferences
