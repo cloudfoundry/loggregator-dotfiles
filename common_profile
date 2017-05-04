@@ -9,4 +9,4 @@ export GEM_PATH=$HOME/.gem
 
 export GOPATH=$HOME/workspace/go
 export PATH=$GOPATH/bin:$PATH
-
+export GIT_PS1_SHOWUNTRACKEDFILES=true
