@@ -1,6 +1,6 @@
 #!/bin/bash
 
-all_dotfiles="bashrc bash_darwin bash_profile common_profile tmux.conf vimrc vim aliases git-authors gitconfig Xresources alacritty.yml"
+all_dotfiles="bashrc bash_darwin bash_profile common_profile tmux.conf vimrc vim aliases git-authors gitconfig alacritty.yml"
 
 function link {
     echo Attempting to link $1
@@ -33,11 +33,6 @@ function initialize_vim_plugins {
     vim +PluginInstall +qall
 }
 
-function merge_x_resources {
-    xrdb merge ~/.Xresources
-}
-
 update_submodules
 link_all_dotfiles
 initialize_vim_plugins
-merge_x_resources
