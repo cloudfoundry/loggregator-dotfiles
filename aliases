@@ -5,13 +5,19 @@ else
   alias ls="ls --color=auto"
 fi
 
+# system
 alias ll="ls -la"
 alias grep='grep --color=auto'
-alias loggr='cd ~/workspace/loggregator'
-alias depl='cd ~/workspace/deployments-loggregator'
-alias ci='cd ~/workspace/loggregator-ci'
 
+# projects
+alias loggr='cd ~/workspace/loggregator'
+alias src='cd ~/workspace/loggregator/src/code.cloudfoundry.org/loggregator'
+alias client="cd ~/workspace/go/src/code.cloudfoundry.org/go-loggregator"
 alias ss="cd ~/workspace/scalable-syslog-release/src/code.cloudfoundry.org/scalable-syslog"
 alias ssr="cd ~/workspace/scalable-syslog-release/"
 
-alias client="cd ~/workspace/go/src/code.cloudfoundry.org/go-loggregator"
+# repos
+alias depl='cd ~/workspace/deployments-loggregator'
+alias ci='cd ~/workspace/loggregator-ci'
+
+
