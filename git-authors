@@ -1,18 +1,11 @@
-# This file is managed by sprout
-
 authors:
-  ap: Andrew Poydence; apoydence
   jk: Jason Keene; jkeene
+  wj: Wesley Jeanette; wjeanette
+  ap: Andrew Poydence; apoydence
   js: Johanna Smith; josmith
-  wf: Warren Fernandes; wfernandes
   ec: Eno Compton; ecompton
   bl: Brady Love; blove
-  mk: Mark Kollasch; mkollasch
 email:
   domain: pivotal.io
-email_addresses:
-  jt: jtarchie@gmail.com
-  wf: warren.f.fernandes@gmail.com
 
 global: true
-
