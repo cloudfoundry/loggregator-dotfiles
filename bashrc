@@ -13,7 +13,10 @@ unset platform_script
 # GENERAL
 ##############################################################################
 export EDITOR=vim
-export TERM=screen-256color
+
+# make less highlight search results:
+# https://unix.stackexchange.com/questions/179173/make-less-highlight-search-patterns-instead-of-italicizing-them
+export TERM=xterm-256color
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
