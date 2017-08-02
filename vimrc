@@ -63,6 +63,11 @@ endfunction
 autocmd FileType go nmap <leader>c :<C-u>call <SID>toggle_coverage()<CR>
 
 "-----------------------------------------------------------------------------
+" RUBY CONFIG
+"-----------------------------------------------------------------------------
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
+
+"-----------------------------------------------------------------------------
 " CTRL-P CONFIG
 "-----------------------------------------------------------------------------
 let g:ctrlp_show_hidden = 1
