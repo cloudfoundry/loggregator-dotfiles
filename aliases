@@ -20,5 +20,5 @@ alias ssr="cd ~/workspace/scalable-syslog-release/"
 # repos
 alias depl='cd ~/workspace/deployments-loggregator'
 alias ci='cd ~/workspace/loggregator-ci'
-
+alias cfd='cd ~/workspace/cf-deployment'
 
