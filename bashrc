@@ -113,3 +113,6 @@ fi
 # Arrow search history
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+
+# enable ginkgo focus in editors
+export GINKGO_EDITOR_INTEGRATION=true
