@@ -116,6 +116,3 @@ bind '"\e[B": history-search-forward'
 
 # enable ginkgo focus in editors
 export GINKGO_EDITOR_INTEGRATION=true
-
-# load rbenv
-eval "$(rbenv init -)"
