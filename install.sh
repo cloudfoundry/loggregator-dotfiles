@@ -1,6 +1,6 @@
 #!/bin/bash
 
-all_dotfiles="bashrc bash_darwin bash_profile common_profile tmux.conf vimrc vim aliases git-authors gitconfig alacritty.yml"
+all_dotfiles="bashrc bash_darwin bash_profile common_profile tmux.conf vimrc vim aliases git-authors gitconfig alacritty.yml rbenv"
 
 function link {
     echo Attempting to link $1
@@ -33,6 +33,15 @@ function initialize_vim_plugins {
     vim +PluginInstall +qall
 }
 
+function initialize_rbenv {
+    pushd ~/.rbenv
+        src/configure && make -C src
+        mkdir -p $HOME/.rbenv/plugins
+        git clone https://github.com/rbenv/ruby-build.git $HOME/.rbenv/plugins/ruby-build
+    popd
+}
+
 update_submodules
 link_all_dotfiles
 initialize_vim_plugins
+initialize_rbenv
