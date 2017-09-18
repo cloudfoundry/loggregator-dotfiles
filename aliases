@@ -17,7 +17,7 @@ alias client="cd ~/workspace/go/src/code.cloudfoundry.org/go-loggregator"
 alias ss="cd ~/workspace/cf-syslog-drain-release/src/code.cloudfoundry.org/scalable-syslog"
 alias ssr="cd ~/workspace/cf-syslog-drain-release/"
 alias sdr="cd ~/workspace/cf-syslog-drain-release/"
-alias tools="cd ~/workspace/loggregator-tools"
+alias tools="cd ~/workspace/go/src/code.cloudfoundry.org/loggregator-tools"
 alias dotfiles="cd ~/workspace/loggregator-dotfiles"
 
 # repos
