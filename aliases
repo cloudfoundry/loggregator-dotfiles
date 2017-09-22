@@ -12,7 +12,7 @@ alias nocaps='/usr/bin/setxkbmap -layout us -option ctrl:nocaps'
 
 # projects
 alias loggr='cd ~/workspace/loggregator'
-alias gologgr='cd ~/workspace/go-loggregator/src/code.cloudfoundry.org/go-loggregator'
+alias gologgr='cd ~/workspace/go/src/code.cloudfoundry.org/go-loggregator'
 alias src='cd ~/workspace/loggregator/src/code.cloudfoundry.org/loggregator'
 alias client="cd ~/workspace/go/src/code.cloudfoundry.org/go-loggregator"
 alias ss="cd ~/workspace/cf-syslog-drain-release/src/code.cloudfoundry.org/scalable-syslog"
@@ -20,6 +20,7 @@ alias ssr="cd ~/workspace/cf-syslog-drain-release/"
 alias sdr="cd ~/workspace/cf-syslog-drain-release/"
 alias tools="cd ~/workspace/go/src/code.cloudfoundry.org/loggregator-tools"
 alias dotfiles="cd ~/workspace/loggregator-dotfiles"
+alias bench="cd ~/workspace/loggregator-bench-release"
 
 # repos
 alias depl='cd ~/workspace/deployments-loggregator'
