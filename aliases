@@ -21,6 +21,8 @@ alias sdr="cd ~/workspace/cf-syslog-drain-release/"
 alias tools="cd ~/workspace/go/src/code.cloudfoundry.org/loggregator-tools"
 alias dotfiles="cd ~/workspace/loggregator-dotfiles"
 alias bench="cd ~/workspace/loggregator-bench-release"
+alias refnozr="cd ~/workspace/reference-nozzle-release"
+alias refnoz="cd ~/workspace/reference-nozzle-release/src/code.cloudfoundry.org/refnozzle"
 
 # repos
 alias depl='cd ~/workspace/deployments-loggregator'
