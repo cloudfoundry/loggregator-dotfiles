@@ -23,6 +23,8 @@ alias dotfiles="cd ~/workspace/loggregator-dotfiles"
 alias bench="cd ~/workspace/loggregator-bench-release"
 alias refnozr="cd ~/workspace/reference-nozzle-release"
 alias refnoz="cd ~/workspace/reference-nozzle-release/src/code.cloudfoundry.org/refnozzle"
+alias nnn="cd ~/workspace/noisy-neighbor-nozzle-release/src/code.cloudfoundry.org/noisy-neighbor-nozzle"
+alias nnnr="cd ~/workspace/noisy-neighbor-nozzle-release"
 
 # repos
 alias depl='cd ~/workspace/deployments-loggregator'
