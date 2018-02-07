@@ -19,6 +19,8 @@ Plugin 'tpope/vim-fugitive'         " Help formatting commit messages
 Plugin 'tpope/vim-dispatch'         " Allow background builds
 Plugin 'fatih/vim-go'               " Helpful plugin for Golang dev
 Plugin 'vim-scripts/bufkill.vim'    " Kill buffers and leave windows intact
+Plugin 'ervandew/supertab'          " Perform all completions with Tab
+Plugin 'scrooloose/nerdtree'        " Directory tree explorer
 call vundle#end()                   " Complete vunde initialization
 
 " detect file type, turn on that type's plugins and indent preferences
@@ -170,3 +172,4 @@ nmap <c-j> <c-w>j
 nmap <c-k> <c-w>k
 nmap <c-h> <c-w>h
 nmap <c-l> <c-w>l
+set laststatus=2
