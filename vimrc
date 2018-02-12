@@ -41,6 +41,9 @@ autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <leader>a <Plug>(go-alternate-edit)
 autocmd FileType go nmap <leader>d :GoDeclsDir<CR>
 autocmd FileType go nmap <leader>g <Plug>(go-generate)
+autocmd FileType go nmap <leader>? :GoDoc<CR>
+autocmd FileType go nmap <leader>n :GoRename<CR>
+autocmd FileType go nmap <leader>l :GoMetaLinter<CR>
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
