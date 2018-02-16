@@ -9,6 +9,7 @@ fi
 alias ll="ls -la"
 alias grep='grep --color=auto'
 alias nocaps='/usr/bin/setxkbmap -layout us -option ctrl:nocaps'
+alias check-repos="~/workspace/loggregator-dotfiles/check-repos.sh"
 
 # projects
 alias loggr='cd ~/workspace/loggregator-release'
