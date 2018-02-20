@@ -6,14 +6,17 @@ sudo apt update
 sudo apt install -y automake build-essential pkg-config libncurses5-dev \
   libevent-dev vim git ruby cmake libfreetype6-dev libfontconfig1-dev xclip curl \
   chromium-browser python python-gtk2 python-xlib python-dbus python-wnck python-setuptools \
-  htop python-pip openssh-server
+  htop python-pip openssh-server virtualbox-qt
+
 
 curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 
-mkdir ~/workspace
+if [ ! -d ~/workspace ]; then
+    mkdir ~/workspace
+fi
 
-pushd workspace
+pushd ~/workspace
   # Install alacritty
   git clone https://github.com/jwilm/alacritty.git
   pushd alacritty
