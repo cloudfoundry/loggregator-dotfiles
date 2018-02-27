@@ -33,6 +33,7 @@ alias lcli="cd ~/workspace/go/src/code.cloudfoundry.org/log-cache-cli"
 alias latsr="cd ~/workspace/logging-acceptance-tests-release"
 alias lats="cd ~/workspace/logging-acceptance-tests-release/src/lats"
 alias draincli="cd ~/workspace/go/src/code.cloudfoundry.org/cf-drain-cli"
+alias lar="cd ~/workspace/go/src/code.cloudfoundry.org/loggregator-agent-release"
 
 # repos
 alias depl='cd ~/workspace/deployments-loggregator'
