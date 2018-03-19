@@ -110,6 +110,12 @@ set list                " enable display of invisible characters
 highlight NonText ctermfg=239
 highlight SpecialKey ctermfg=239
 
+
+"------------------------------------------------------------------------------
+" supertab config
+"------------------------------------------------------------------------------
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+
 "------------------------------------------------------------------------------
 " BEHAVIOR
 "------------------------------------------------------------------------------
@@ -176,3 +182,7 @@ nmap <c-k> <c-w>k
 nmap <c-h> <c-w>h
 nmap <c-l> <c-w>l
 set laststatus=2
+
+" resize windows more easily
+nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
