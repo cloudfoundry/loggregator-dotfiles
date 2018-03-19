@@ -40,3 +40,4 @@ alias depl='cd ~/workspace/deployments-loggregator'
 alias ci='cd ~/workspace/loggregator-ci'
 alias cfd='cd ~/workspace/cf-deployment'
 
+alias pbc='tmux show-buffer | DISPLAY=:0 xsel -b'
