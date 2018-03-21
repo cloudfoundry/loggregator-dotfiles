@@ -39,5 +39,13 @@ alias lar="cd ~/workspace/go/src/code.cloudfoundry.org/loggregator-agent-release
 alias depl='cd ~/workspace/deployments-loggregator'
 alias ci='cd ~/workspace/loggregator-ci'
 alias cfd='cd ~/workspace/cf-deployment'
+alias play='cd ~/workspace/deployments-loggregator/gcp/playground'
+alias coconut='cd ~/workspace/deployments-loggregator/gcp/coconut-bbl'
 
 alias pbc='tmux show-buffer | DISPLAY=:0 xsel -b'
+
+# quick logins
+alias login='./cf_login'
+alias PWS='cf login -a api.run.pivotal.io -u cf-lamb@pivotallabs.com'
+alias cf-manifest='bosh -d cf manifest > manifest.yml && vim manifest.yml'
+alias cf-deploy='bosh -d cf deploy manifest.yml'
