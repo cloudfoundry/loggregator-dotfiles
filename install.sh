@@ -33,6 +33,22 @@ function initialize_vim_plugins {
     vim +PluginInstall +qall
 }
 
+function install_hooks {
+    hook=$(pwd)/hooks/no-push-master
+    for repo in $(find ~/workspace -name .git -type d); do
+        for protected in loggregator-release loggregator-agent-release cf-syslog-drain-release log-cache-release cf-drain-cli noisy-neighbor-nozzle log-cache-cli; do
+            pushd $repo > /dev/null
+                repo_url=$(git config --get remote.origin.url)
+                if [[ $repo_url = *"${protected}.git" ]]; then
+                    echo "installing pre-push hook in $repo..."
+                    cp $hook hooks/pre-push
+                fi
+            popd > /dev/null
+        done
+    done
+}
+
 update_submodules
 link_all_dotfiles
 initialize_vim_plugins
+install_hooks
