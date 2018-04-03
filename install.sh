@@ -39,8 +39,8 @@ function install_hooks {
         for protected in loggregator-release loggregator-agent-release cf-syslog-drain-release log-cache-release cf-drain-cli noisy-neighbor-nozzle log-cache-cli; do
             pushd $repo > /dev/null
                 repo_url=$(git config --get remote.origin.url)
-                if [[ $repo_url = *"${protected}.git" ]]; then
-                    echo "installing pre-push hook in $repo..."
+                if [[ $repo_url = *"${protected}" || $repo_url = *"${protected}.git" ]]; then
+                    echo "installing pre-push hook in $repo_url..."
                     cp $hook hooks/pre-push
                 fi
             popd > /dev/null
