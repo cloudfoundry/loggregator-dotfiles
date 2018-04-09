@@ -69,6 +69,15 @@ endfunction
 
 autocmd FileType go nmap <leader>c :<C-u>call <SID>toggle_coverage()<CR>
 
+" This will add new commands, called :A, :AV, :AS and :AT. Here :A works just
+" like :GoAlternate, it replaces the current buffer with the alternate file.
+" :AV will open a new vertical split with the alternate file. :AS will open
+" the alternate file in a new split view and :AT in a new tab.
+autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
+autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
+autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
+autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
+
 "-----------------------------------------------------------------------------
 " RUBY CONFIG
 "-----------------------------------------------------------------------------
