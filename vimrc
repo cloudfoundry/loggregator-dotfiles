@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive'         " Help formatting commit messages
 Plugin 'tpope/vim-dispatch'         " Allow background builds
 Plugin 'tpope/vim-unimpaired'       " Add normal mode aliases for commonly used ex commands
 Plugin 'fatih/vim-go'               " Helpful plugin for Golang dev
+Plugin 'AndrewRadev/splitjoin.vim'  " Enable vim-go to split structs into multi lines
 Plugin 'vim-scripts/bufkill.vim'    " Kill buffers and leave windows intact
 Plugin 'ervandew/supertab'          " Perform all completions with Tab
 Plugin 'scrooloose/nerdtree'        " Directory tree explorer
