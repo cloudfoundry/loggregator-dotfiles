@@ -41,6 +41,7 @@ alias ci='cd ~/workspace/loggregator-ci'
 alias cfd='cd ~/workspace/cf-deployment'
 alias play='cd ~/workspace/deployments-loggregator/gcp/playground'
 alias coconut='cd ~/workspace/deployments-loggregator/gcp/coconut-bbl'
+alias cats="cd ~/workspace/go/src/github.com/cloudfoundry/cf-acceptance-tests"
 
 alias pbc='tmux show-buffer | DISPLAY=:0 xsel -b'
 
