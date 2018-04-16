@@ -23,6 +23,7 @@ Plugin 'AndrewRadev/splitjoin.vim'  " Enable vim-go to split structs into multi 
 Plugin 'vim-scripts/bufkill.vim'    " Kill buffers and leave windows intact
 Plugin 'ervandew/supertab'          " Perform all completions with Tab
 Plugin 'scrooloose/nerdtree'        " Directory tree explorer
+Plugin 'regreplop.vim'              " Replace with a specified register
 call vundle#end()                   " Complete vunde initialization
 
 " detect file type, turn on that type's plugins and indent preferences
