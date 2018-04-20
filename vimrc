@@ -21,6 +21,7 @@ Plugin 'tpope/vim-unimpaired'       " Add normal mode aliases for commonly used 
 Plugin 'fatih/vim-go'               " Helpful plugin for Golang dev
 Plugin 'AndrewRadev/splitjoin.vim'  " Enable vim-go to split structs into multi lines
 Plugin 'vim-scripts/bufkill.vim'    " Kill buffers and leave windows intact
+Plugin 'vim-scripts/argtextobj.vim' " function args as text objects
 Plugin 'ervandew/supertab'          " Perform all completions with Tab
 Plugin 'scrooloose/nerdtree'        " Directory tree explorer
 Plugin 'regreplop.vim'              " Replace with a specified register
@@ -40,7 +41,7 @@ set updatetime=100 " updates :GoInfo faster
 
 " vim-go command shortcuts
 autocmd FileType go nmap <leader>r <Plug>(go-run)
-autocmd FileType go nmap <leader>t <Plug>(go-test)
+autocmd FileType go nmap <leader>t :wa<CR>:!go test ./%:h<CR>
 autocmd FileType go nmap <leader>a <Plug>(go-alternate-edit)
 autocmd FileType go nmap <leader>d :GoDeclsDir<CR>
 autocmd FileType go nmap <leader>g <Plug>(go-generate)

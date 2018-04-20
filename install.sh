@@ -36,7 +36,7 @@ function initialize_vim_plugins {
 function install_hooks {
     hook=$(pwd)/hooks/no-push-master
     for repo in $(find ~/workspace -name .git -type d); do
-        for protected in loggregator-release loggregator-agent-release cf-syslog-drain-release log-cache-release cf-drain-cli noisy-neighbor-nozzle log-cache-cli; do
+        for protected in loggregator-release loggregator-agent-release cf-syslog-drain-release log-cache-release cf-drain-cli noisy-neighbor-nozzle log-cache-cli service-metrics-release; do
             pushd $repo > /dev/null
                 repo_url=$(git config --get remote.origin.url)
                 if [[ $repo_url = *"${protected}" || $repo_url = *"${protected}.git" ]]; then
