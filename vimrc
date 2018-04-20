@@ -140,6 +140,7 @@ set formatoptions+=l            " don't break long lines less they are new
 
 set hlsearch                    " highlight search results
 set smartcase                   " ignore case if lower, otherwise match case
+set incsearch                   " jump to results as I search
 set splitbelow                  " split panes on the bottom
 set splitright                  " split panes to the right
 
