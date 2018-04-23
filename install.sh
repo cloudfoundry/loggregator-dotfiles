@@ -1,5 +1,26 @@
 #!/bin/bash
 
+LINK_DOTFILES=false
+INIT_VIM=false
+INSTALL_HOOKS=false
+
+flag=$1
+if [[ "$flag" = "" ]]; then
+    flag="-a"
+fi
+
+if [[ "$flag" = "-a" ]]; then
+    LINK_DOTFILES=true
+    INIT_VIM=true
+    INSTALL_HOOKS=true
+elif [[ "$flag" = "-h" ]]; then
+    INSTALL_HOOKS=true
+elif [[ "$flag" = "-l" ]]; then
+    LINK_DOTFILES=true
+elif [[ "$flag" = "-p" ]]; then
+    INIT_VIM=true
+fi
+
 all_dotfiles="bashrc bash_darwin bash_profile common_profile tmux.conf vimrc vim aliases git-authors gitconfig alacritty.yml rbenv"
 
 function link {
@@ -13,7 +34,7 @@ function print_error {
 
 function link_all_dotfiles {
     for dotfile in $all_dotfiles; do
-        if [ -f $HOME/.$1 ];
+        if [[ -f $HOME/.$1 ]];
         then
             # file exists
             print_error $dotfile
@@ -48,7 +69,14 @@ function install_hooks {
     done
 }
 
+
 update_submodules
-link_all_dotfiles
-initialize_vim_plugins
-install_hooks
+if [[ "$LINK_DOTFILES" = "true" ]]; then
+    link_all_dotfiles
+fi
+if [[ "$INIT_VIM" = "true" ]]; then
+    initialize_vim_plugins
+fi
+if [[ "$INSTALL_HOOKS" = "true" ]]; then
+    install_hooks
+fi
