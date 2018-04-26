@@ -1,21 +1,21 @@
 [push]
 	default = simple
 [alias]
-  st=status
-  di=diff
-  dc=diff --cached
-  co=checkout
-  ci=duet-commit
-  br=branch
-  sta=stash
-  llog="log --date=local"
-  flog="log --pretty=fuller --decorate"
-  lol="log --graph --decorate --oneline"
-  lola="log --graph --decorate --oneline --all"
   blog="log origin/master... --left-right"
+  br=branch
+  ci=duet-commit
+  co=checkout
+  dc=diff --cached
+  di=diff
   ds="diff --staged"
   fixup="commit --fixup"
-  squash="commit --squash"
-  unstage="reset HEAD"
+  flog="log --pretty=fuller --decorate"
+  llog="log --date=local"
+  lol="log --graph --decorate --oneline"
+  lola="log --graph --decorate --oneline --all"
   rum="rebase master@{u}"
+  squash="commit --squash"
+  st=status
+  sta=stash
   sur="submodule update --init --recursive"
+  unstage="reset HEAD"
