@@ -8,6 +8,7 @@
   dc=diff --cached
   di=diff
   ds="diff --staged"
+  fetch="fetch --all --prune"
   fixup="commit --fixup"
   flog="log --pretty=fuller --decorate"
   llog="log --date=local"
