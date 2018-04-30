@@ -66,19 +66,24 @@ HISTFILESIZE=20000
 ##############################################################################
 NO_COLOR='\[\033[0m\]'
 YELLOW='\[\033[0;33m\]'
+RED='\[\033[1;31m\]'
 GREEN='\[\033[0;32m\]'
 BLUE='\[\033[0;34m\]'
 PURPLE='\[\033[0;35m\]'
 WHITE='\[\033[0;37m\]'
 GIT_PS1_SHOWDIRTYSTATE=true
 function color_my_prompt {
+    local EXIT="$?"
     local __user_and_host="\u@\h"
     local __cur_location="\W"
     local __git_info='$(__git_ps1 "(%s)")'
-    local __prompt_tail="$"
-    export PS1="$GREEN$__user_and_host $BLUE$__cur_location $YELLOW$__git_info$PURPLE$__prompt_tail$NO_COLOR "
+    local __prompt_tail="$PURPLE$"
+    if [ $EXIT -gt 0 ]; then
+        __prompt_tail="$RED$EXIT $__prompt_tail"
+    fi
+    export PS1="$GREEN$__user_and_host $BLUE$__cur_location $YELLOW$__git_info $__prompt_tail$NO_COLOR "
 }
-color_my_prompt
+PROMPT_COMMAND=color_my_prompt
 
 ##############################################################################
 # CUSTOM ADDITIONS
