@@ -43,11 +43,6 @@ if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
-# enable direnv
-if [ which -a direnv ]; then
-    eval "$(direnv hook bash)"
-fi
-
 ##############################################################################
 # HISTORY
 ##############################################################################
@@ -84,6 +79,11 @@ function color_my_prompt {
     export PS1="$GREEN$__user_and_host $BLUE$__cur_location $YELLOW$__git_info $__prompt_tail$NO_COLOR "
 }
 PROMPT_COMMAND=color_my_prompt
+
+# enable direnv
+if [ which -a direnv ]; then
+    eval "$(direnv hook bash)"
+fi
 
 ##############################################################################
 # CUSTOM ADDITIONS
