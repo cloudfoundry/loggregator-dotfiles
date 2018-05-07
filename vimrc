@@ -9,24 +9,23 @@ set hidden                    " Allow unwritten buffers
 "-----------------------------------------------------------------------------
 " VUNDLE PLUGIN MANAGEMENT
 "-----------------------------------------------------------------------------
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim   " Set the runtime path to include Vundle
-call vundle#begin()                 " Initialize vundle
-Plugin 'VundleVim/Vundle.vim'       " Let Vundle manage Vundle
-Plugin 'ctrlpvim/ctrlp.vim'         " Quick file navigation
-Plugin 'tpope/vim-commentary'       " Quickly comment lines out and in
-Plugin 'tpope/vim-fugitive'         " Help formatting commit messages
-Plugin 'tpope/vim-dispatch'         " Allow background builds
-Plugin 'tpope/vim-unimpaired'       " Add normal mode aliases for commonly used ex commands
-Plugin 'tpope/vim-surround'         " quoting/parenthesizing made simple
-Plugin 'fatih/vim-go'               " Helpful plugin for Golang dev
-Plugin 'AndrewRadev/splitjoin.vim'  " Enable vim-go to split structs into multi lines
-Plugin 'vim-scripts/bufkill.vim'    " Kill buffers and leave windows intact
-Plugin 'vim-scripts/argtextobj.vim' " function args as text objects
-Plugin 'ervandew/supertab'          " Perform all completions with Tab
-Plugin 'scrooloose/nerdtree'        " Directory tree explorer
-Plugin 'regreplop.vim'              " Replace with a specified register
-call vundle#end()                   " Complete vunde initialization
+set rtp+=~/.vim/bundle/Vundle.vim    " Set the runtime path to include Vundle
+call vundle#begin()                  " Initialize vundle
+Plugin 'VundleVim/Vundle.vim'        " Let Vundle manage Vundle
+Plugin 'ctrlpvim/ctrlp.vim'          " Quick file navigation
+Plugin 'tpope/vim-commentary'        " Quickly comment lines out and in
+Plugin 'tpope/vim-fugitive'          " Help formatting commit messages
+Plugin 'tpope/vim-dispatch'          " Allow background builds
+Plugin 'tpope/vim-unimpaired'        " Add normal mode aliases for commonly used ex commands
+Plugin 'fatih/vim-go'                " Helpful plugin for Golang dev
+Plugin 'AndrewRadev/splitjoin.vim'   " Enable vim-go to split structs into multi lines
+Plugin 'vim-scripts/bufkill.vim'     " Kill buffers and leave windows intact
+Plugin 'ervandew/supertab'           " Perform all completions with Tab
+Plugin 'scrooloose/nerdtree'         " Directory tree explorer
+Plugin 'gaving/vim-textobj-argument' " Function arguments as text objects
+Plugin 'vim-airline/vim-airline'     " Status line improvements
+Plugin 'regreplop.vim'               " Replace with a specified register
+call vundle#end()                    " Complete vunde initialization
 
 " detect file type, turn on that type's plugins and indent preferences
 filetype plugin indent on
