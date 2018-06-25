@@ -41,6 +41,7 @@ alias ci='cd ~/workspace/loggregator-ci'
 alias cfd='cd ~/workspace/cf-deployment'
 alias play='cd ~/workspace/deployments-loggregator/gcp/playground'
 alias coconut='cd ~/workspace/deployments-loggregator/gcp/coconut-bbl'
+alias one='cd ~/workspace/deployments-loggregator/gcp/ci-pool/one'
 alias cats="cd ~/workspace/go/src/github.com/cloudfoundry/cf-acceptance-tests"
 alias locks="cd /home/pivotal/workspace/loggregator-locks"
 
