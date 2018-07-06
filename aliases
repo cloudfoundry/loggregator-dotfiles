@@ -34,6 +34,8 @@ alias latsr="cd ~/workspace/logging-acceptance-tests-release"
 alias lats="cd ~/workspace/logging-acceptance-tests-release/src/code.cloudfoundry.org/logging-acceptance-tests"
 alias draincli="cd ~/workspace/go/src/code.cloudfoundry.org/cf-drain-cli"
 alias lar="cd ~/workspace/go/src/github.com/cloudfoundry/loggregator-agent-release"
+alias lcatsr="cd ~/workspace/log-cache-acceptance-tests-release"
+alias lcats="cd ~/workspace/log-cache-acceptance-tests-release/src/code.cloudfoundry.org/log-cache-acceptance-tests"
 
 # repos
 alias depl='cd ~/workspace/deployments-loggregator'
@@ -42,6 +44,7 @@ alias cfd='cd ~/workspace/cf-deployment'
 alias play='cd ~/workspace/deployments-loggregator/gcp/playground'
 alias coconut='cd ~/workspace/deployments-loggregator/gcp/coconut-bbl'
 alias one='cd ~/workspace/deployments-loggregator/gcp/ci-pool/one'
+alias two='cd ~/workspace/deployments-loggregator/gcp/ci-pool/two'
 alias cats="cd ~/workspace/go/src/github.com/cloudfoundry/cf-acceptance-tests"
 alias locks="cd /home/pivotal/workspace/loggregator-locks"
 
