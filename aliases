@@ -34,8 +34,8 @@ alias latsr="cd ~/workspace/logging-acceptance-tests-release"
 alias lats="cd ~/workspace/logging-acceptance-tests-release/src/code.cloudfoundry.org/logging-acceptance-tests"
 alias draincli="cd ~/workspace/go/src/code.cloudfoundry.org/cf-drain-cli"
 alias lar="cd ~/workspace/go/src/github.com/cloudfoundry/loggregator-agent-release"
+alias lcats="cd ~/workspace/log-cache-acceptance-tests-release/src/github.com/cloudfoundry/log-cache-acceptance-tests"
 alias lcatsr="cd ~/workspace/log-cache-acceptance-tests-release"
-alias lcats="cd ~/workspace/log-cache-acceptance-tests-release/src/code.cloudfoundry.org/log-cache-acceptance-tests"
 
 # repos
 alias depl='cd ~/workspace/deployments-loggregator'
