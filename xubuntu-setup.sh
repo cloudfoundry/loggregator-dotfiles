@@ -6,8 +6,8 @@ sudo apt update
 sudo apt install -y automake build-essential pkg-config libncurses5-dev \
   libevent-dev vim git ruby cmake libfreetype6-dev libfontconfig1-dev xclip curl \
   chromium-browser python python-gtk2 python-xlib python-dbus python-wnck python-setuptools \
-  htop python-pip openssh-server virtualbox-qt
-
+  htop python-pip openssh-server virtualbox-qt bash-completion libcurl3 \
+  libcurl3-openssl-dev libssl1.0 libssl-dev libxml2 libxml2-dev ca-certificates
 
 curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
@@ -25,6 +25,14 @@ pushd ~/workspace
     cp Alacritty.desktop ~/.local/share/applications
   popd
   rm -rf alacritty
+
+  # Install lpass cli
+  git clone https://github.com/lastpass/lastpass-cli.git
+  pushd lastpass-cli
+    make
+    sudo cp build/lpass /usr/local/bin
+  popd
+  rm -rf lastpass-cli
 
   # Install tmux
   wget https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz
