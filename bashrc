@@ -124,3 +124,6 @@ export GINKGO_EDITOR_INTEGRATION=true
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+
+[[ -s /home/pivotal/.autojump/etc/profile.d/autojump.sh ]] && \
+   source /home/pivotal/.autojump/etc/profile.d/autojump.sh

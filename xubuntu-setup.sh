@@ -94,4 +94,9 @@ pushd ~/workspace
     tar xzvf linux_amd64.tar.gz
     cp git-* ~/bin/.
   popd
+
+  git clone https://github.com/wting/autojump
+  pushd autojump
+    ./install.py
+  popd
 popd
