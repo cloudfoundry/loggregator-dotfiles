@@ -63,10 +63,10 @@ pushd ~/workspace
   rm -rf ruby-install-0.6.1
 
   # Install Go
-  wget https://dl.google.com/go/go1.9.4.linux-amd64.tar.gz
-  tar xzvf go1.9.4.linux-amd64.tar.gz
+  wget https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz
+  tar xzvf go1.11.2.linux-amd64.tar.gz
   sudo mv go /usr/local/go
-  rm go1.9.4.linux-amd64.tar.gz
+  rm go1.11.2.linux-amd64.tar.gz
 
   # Install dotfiles
   git clone https://github.com/cloudfoundry/loggregator-dotfiles.git
