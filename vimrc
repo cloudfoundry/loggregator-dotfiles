@@ -17,6 +17,8 @@ Plugin 'tpope/vim-commentary'        " Quickly comment lines out and in
 Plugin 'tpope/vim-fugitive'          " Help formatting commit messages
 Plugin 'tpope/vim-dispatch'          " Allow background builds
 Plugin 'tpope/vim-unimpaired'        " Add normal mode aliases for commonly used ex commands
+Plugin 'tpope/vim-surround'          " Easily change surrounding characters
+Plugin 'tpope/vim-vinegar'           " Use `minus` to access netrw and navigate directories
 Plugin 'fatih/vim-go'                " Helpful plugin for Golang dev
 Plugin 'AndrewRadev/splitjoin.vim'   " Enable vim-go to split structs into multi lines
 Plugin 'vim-scripts/bufkill.vim'     " Kill buffers and leave windows intact
@@ -25,6 +27,7 @@ Plugin 'scrooloose/nerdtree'         " Directory tree explorer
 Plugin 'gaving/vim-textobj-argument' " Function arguments as text objects
 Plugin 'vim-airline/vim-airline'     " Status line improvements
 Plugin 'regreplop.vim'               " Replace with a specified register
+Plugin 'rking/ag.vim'                " Add ag to vim
 call vundle#end()                    " Complete vunde initialization
 
 " detect file type, turn on that type's plugins and indent preferences
@@ -198,5 +201,5 @@ nmap <c-l> <c-w>l
 set laststatus=2
 
 " resize windows more easily
-nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
-nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
+" nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
+" nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
