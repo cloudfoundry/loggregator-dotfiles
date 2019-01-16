@@ -22,3 +22,14 @@
   sta=stash
   sur="submodule update --init --recursive"
   unstage="reset HEAD"
+[user]
+	name = Travis Patterson
+	email = tpatterson@pivotal.io
+[duet "env"]
+	git-author-initials = tp
+	git-author-name = Travis Patterson
+	git-author-email = tpatterson@pivotal.io
+	mtime = 1547659281
+	git-committer-initials = jc
+	git-committer-name = John Cornish
+	git-committer-email = jcornish@pivotal.io
