@@ -21,7 +21,7 @@ elif [[ "$flag" = "-p" ]]; then
     INIT_VIM=true
 fi
 
-all_dotfiles="common_profile vimrc vim aliases git-authors gitconfig rbenv"
+all_dotfiles="common_profile vimrc vim"
 
 function link {
     echo Attempting to link $1
