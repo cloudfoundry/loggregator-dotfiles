@@ -1,5 +1,6 @@
 authors:
   bl: Brady Love; blove
+  cy: Caitlyn Yu; cyu
   tp: Travis Patterson; tpatterson
   jt: Johannes Tuchscherer; jtuchscherer
   jc: John Cornish; jcornish
@@ -7,6 +8,7 @@ authors:
   tc: Tom Chen; tochen
   js: Johanna Smith; josmith
   jf: John Foley; jfoley
+  me: Max Eshleman; meshleman
 email:
   domain: pivotal.io
 

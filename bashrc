@@ -15,23 +15,9 @@ unset platform_script
 export EDITOR=vim
 export TERM=screen-256color
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    source /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    source /etc/bash_completion
-  fi
-fi
+source ~/.git-prompt.sh
+export PATH=$PATH:/usr/local/go/bin
 
-# source bash_completion.d
-if [ -d /usr/local/etc/bash_completion.d ]; then
-    for line in $(echo /usr/local/etc/bash_completion.d/*.sh); do
-        source $line
-    done
-fi
 
 # source profile that is shared between shells
 if [ -f ~/.common_profile ]; then
@@ -127,3 +113,17 @@ source /usr/local/share/chruby/auto.sh
 
 [[ -s /home/pivotal/.autojump/etc/profile.d/autojump.sh ]] && \
    source /home/pivotal/.autojump/etc/profile.d/autojump.sh
+
+export GOPATH=/Users/pivotal/workspace/go
+
+export PATH=$PATH:/usr/local/sbin
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin
