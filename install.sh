@@ -25,7 +25,7 @@ all_dotfiles="common_profile vimrc vim"
 
 function link {
     echo Attempting to link $1
-    ln -is $PWD/$1 $HOME/.$1
+    ln -s $PWD/$1 $HOME/.$1
 }
 
 function print_error {
