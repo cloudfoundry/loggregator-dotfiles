@@ -50,3 +50,7 @@ alias login='./cf_login'
 alias PWS='cf login -a api.run.pivotal.io -u cf-lamb@pivotallabs.com'
 alias cf-manifest='bosh -d cf manifest > manifest.yml && vim manifest.yml'
 alias cf-deploy='bosh -d cf deploy manifest.yml'
+
+function cdf() {
+  cd $(dirname $1)
+}
