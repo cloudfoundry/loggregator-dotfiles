@@ -31,15 +31,14 @@ alias draincli="cd ${HOME}/workspace/go/src/code.cloudfoundry.org/cf-drain-cli"
 alias lar="cd ${HOME}/workspace/loggregator-agent-release"
 alias lcats="cd ${HOME}/workspace/log-cache-acceptance-tests-release/src/github.com/cloudfoundry/log-cache-acceptance-tests"
 alias lcatsr="cd ${HOME}/workspace/log-cache-acceptance-tests-release"
+alias mdr="cd ${HOME}/workspace/metrics-discovery-release"
+alias slr="cd ${HOME}/workspace/service-logs-release"
 
 # repos
 alias depl='cd ${HOME}/workspace/deployments-loggregator'
 alias ci='cd ${HOME}/workspace/loggregator-ci'
 alias cfd='cd ${HOME}/workspace/cf-deployment'
-alias play='cd ${HOME}/workspace/deployments-loggregator/gcp/playground'
 alias coconut='cd ${HOME}/workspace/deployments-loggregator/gcp/coconut-bbl'
-alias one='cd ${HOME}/workspace/deployments-loggregator/gcp/ci-pool/one'
-alias two='cd ${HOME}/workspace/deployments-loggregator/gcp/ci-pool/two'
 alias cats="cd ${HOME}/workspace/go/src/github.com/cloudfoundry/cf-acceptance-tests"
 alias locks="cd ${HOME}/workspace/loggregator-locks"
 
