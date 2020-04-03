@@ -28,6 +28,7 @@ Plugin 'gaving/vim-textobj-argument' " Function arguments as text objects
 Plugin 'vim-airline/vim-airline'     " Status line improvements
 Plugin 'regreplop.vim'               " Replace with a specified register
 Plugin 'rking/ag.vim'                " Add ag to vim
+Plugin 'airblade/vim-gitgutter'      " Add git gutter to vim
 call vundle#end()                    " Complete vunde initialization
 
 " detect file type, turn on that type's plugins and indent preferences
